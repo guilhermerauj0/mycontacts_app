@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">MyContacts</string>
+    <string name="iv_photograph_content_description">Imagem do contato</string>
 </resources>
