@@ -1,6 +1,6 @@
 package com.example.mycontacts
 
-class Contact {
+data class Contact {
     var name: String,
     var phone: String,
     lateinit var photograph: String
