@@ -27,6 +27,7 @@
             app:layout_constraintTop_toTopOf="@+id/iv_photograph"
             app:layout_constraintStart_toEndOf="@+id/iv_photograph"
             android:layout_marginLeft="16dp"
+            style="@style/TextViewDefault"
             android:layout_width="0dp"
             android:textColor="#000000"
             android:textSize="20sp"
