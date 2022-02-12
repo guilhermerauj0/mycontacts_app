@@ -5,7 +5,9 @@
       <map>
         <entry key="..\:/programacao/projetos/mobile/MyContacts/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.141" />
         <entry key="..\:/programacao/projetos/mobile/MyContacts/app/src/main/res/drawable/ic_launcher_background.xml" value="0.141" />
+        <entry key="..\:/programacao/projetos/mobile/MyContacts/app/src/main/res/layout/activity_contact_detail.xml" value="0.20833333333333334" />
         <entry key="..\:/programacao/projetos/mobile/MyContacts/app/src/main/res/layout/activity_main.xml" value="0.19427083333333334" />
+        <entry key="..\:/programacao/projetos/mobile/MyContacts/app/src/main/res/layout/contact_detail.xml" value="0.20833333333333334" />
         <entry key="..\:/programacao/projetos/mobile/MyContacts/app/src/main/res/layout/contact_item.xml" value="0.25" />
         <entry key="..\:/programacao/projetos/mobile/MyContacts/app/src/main/res/layout/drawer_menu.xml" value="0.20833333333333334" />
         <entry key="..\:/programacao/projetos/mobile/MyContacts/app/src/main/res/menu/menu.xml" value="0.20833333333333334" />
