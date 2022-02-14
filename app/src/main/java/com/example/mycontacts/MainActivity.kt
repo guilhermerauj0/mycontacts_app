@@ -1,5 +1,6 @@
 package com.example.mycontacts
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
@@ -7,13 +8,14 @@ import android.view.MenuInflater
 import android.view.MenuItem
 import android.view.View
 import android.widget.Toast
-import android.widget.Toolbar
+import androidx.appcompat.widget.Toolbar
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.mycontacts.DetailActivity.Companion.EXTRA_CONTACT
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity(), ClickItemContactListener {
 
     // A PROPRIA RECYCLER VIEW
     private val rvList: RecyclerView by lazy {
@@ -41,8 +43,14 @@ class MainActivity : AppCompatActivity() {
         toggle.syncState()
     }
 
-
+    override fun clickItemContact(contact: Contact) {
+        val intent = Intent(this, DetailActivity::class.java)
+        intent.putExtra(EXTRA_CONTACT, contact)
+        startActivity(intent)
     }
+
+
+}
 
     private fun bindViews(){
         rvList.adapter = adapter
@@ -56,6 +64,11 @@ class MainActivity : AppCompatActivity() {
                     "Arthur Guilherme",
                     "(00) 99999 9999",
                     "img.png"
+                ),
+                Contact(
+                  "Jose Almeida",
+                  "(99) 99999-9999",
+                  "img.png"
                 )
             )
         )
