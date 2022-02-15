@@ -33,6 +33,9 @@ class MainActivity : AppCompatActivity(), ClickItemContactListener {
         updateList()
     }
 
+    private fun fetchListContact() {
+    }
+
     private fun initDrawer(){
         val drawerLayout = findViewById<View>(R.id.drawer_layout) as DrawerLayout
         val toolbar = findViewById<Toolbar>(R.id.toolbar)
@@ -47,12 +50,7 @@ class MainActivity : AppCompatActivity(), ClickItemContactListener {
         val intent = Intent(this, DetailActivity::class.java)
         intent.putExtra(EXTRA_CONTACT, contact)
         startActivity(intent)
-    }
-
-
-}
-
-    private fun bindViews(){
+    }private fun bindViews(){
         rvList.adapter = adapter
         rvList.layoutManager = LinearLayoutManager(this)
     }
@@ -66,9 +64,9 @@ class MainActivity : AppCompatActivity(), ClickItemContactListener {
                     "img.png"
                 ),
                 Contact(
-                  "Jose Almeida",
-                  "(99) 99999-9999",
-                  "img.png"
+                    "Jose Almeida",
+                    "(99) 99999-9999",
+                    "img.png"
                 )
             )
         )
